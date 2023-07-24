@@ -18,39 +18,43 @@ const Navbar = () => {
   return (
     <nav onMouseOver={handleSubmenu}>
       <div className="nav-center">
-        <img src={logo}/>
-        <button className="btn fabars-btn" onClick={openSidebar}>
-          <FaBars />
-        </button>
+        <div className="nav-header">
+          <img src={logo}/>
+        </div>
+        <ul className="nav-links">
+          <li>
+            <button className="link-btn" onMouseOver={displaySubmenu}>
+              Products
+            </button>
+          </li>
+          <li>
+            <button className="link-btn" onMouseOver={displaySubmenu}>
+              Solutions
+            </button>
+          </li>
+          <li>
+            <button className="link-btn" onMouseOver={displaySubmenu}>
+              Developers
+            </button>
+          </li>
+          <li>
+            <button className="link-btn" onMouseOver={displaySubmenu}>
+              Resources
+            </button>
+          </li>
+          <li>
+            <button className="link-btn" onMouseOver={displaySubmenu}>
+              Pricing
+            </button>
+          </li>
+        </ul>
+        <span className="btn-container">
+          <button className="btn signin-btn">Sign In</button>
+          <button className="btn fabars-btn" onClick={openSidebar}>
+            <FaBars />
+          </button>
+        </span>
       </div>
-      <ul className="nav-links">
-        <li>
-          <button className="link-btn" onMouseOver={displaySubmenu}>
-            Products
-          </button>
-        </li>
-        <li>
-          <button className="link-btn" onMouseOver={displaySubmenu}>
-            Solutions
-          </button>
-        </li>
-        <li>
-          <button className="link-btn" onMouseOver={displaySubmenu}>
-            Developers
-          </button>
-        </li>
-        <li>
-          <button className="link-btn" onMouseOver={displaySubmenu}>
-            Resources
-          </button>
-        </li>
-        <li>
-          <button className="link-btn" onMouseOver={displaySubmenu}>
-            Pricing
-          </button>
-        </li>
-      </ul>
-      <button className="btn signin-btn">Sign In</button>
     </nav>
   )
 }
