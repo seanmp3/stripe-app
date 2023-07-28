@@ -13,6 +13,9 @@ nav {
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
 }
 
 .nav-header {
@@ -40,26 +43,22 @@ nav {
   background: var(--clr-grey-5);
 }
 
+.btn-container {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .signin-btn {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
-  .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-  }
+.fabars-btn {
+  display: inline-block;
+}
 
-  .fabars-btn {
-    display: none;
-    width: 0rem;
-  }
-
-  .signin-btn {
-    display: inline-block;
-  }
-
+@media screen and (min-width: 880px) {
   .nav-links {
     display: block;
     justify-self: center;
@@ -69,6 +68,7 @@ nav {
     height: 100%;
     display: grid;
     align-items: center;
+    margin-left: 2.5vw;
   }
 
   .nav-links li {
@@ -84,5 +84,14 @@ nav {
     color: white;
     letter-spacing: 1px;
     width: 7.25rem;
+  }
+
+  .fabars-btn {
+    display: none;
+    width: 0rem;
+  }
+
+  .signin-btn {
+    display: inline-block;
   }
 }

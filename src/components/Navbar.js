@@ -20,40 +20,44 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo}/>
+          <ul className="nav-links">
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Products
+              </button>
+            </li>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Solutions
+              </button>
+            </li>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Developers
+              </button>
+            </li>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Resources
+              </button>
+            </li>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Pricing
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul className="nav-links">
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Products
-            </button>
-          </li>
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Solutions
-            </button>
-          </li>
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Developers
-            </button>
-          </li>
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Resources
-            </button>
-          </li>
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Pricing
-            </button>
-          </li>
-        </ul>
-        <span className="btn-container">
-          <button className="btn signin-btn">Sign In</button>
+        <div className="btn-container">
+          {/*Contact Button*/}
+          <button className="btn signin-btn">
+            Sign In
+            {/*Arrow Svg*/}
+          </button>
           <button className="btn fabars-btn" onClick={openSidebar}>
             <FaBars />
           </button>
-        </span>
+        </div>
       </div>
     </nav>
   )
