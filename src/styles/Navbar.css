@@ -28,28 +28,6 @@ nav {
   display: none;
 }
 
-.btn {
-  font-size: 1rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius);
-  border-color: transparent;
-  color: white;
-  background: var(--clr-black);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn:hover {
-  background: var(--clr-grey-5);
-}
-
-.btn-container {
-  height: 5rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .signin-btn {
   display: none;
 }

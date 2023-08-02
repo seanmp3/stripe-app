@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Sidebar />
+      {/*<Sidebar />*/}
       <FrontPage />
-      <Submenu />
+      {/*<Submenu />*/}
     </>
   )
 }
